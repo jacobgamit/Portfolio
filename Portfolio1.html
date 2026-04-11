@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Generic - Phantom by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"></span><span class="title">Home</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2></h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="Portfolio1.html">Portfolio1</a></li>
+							<li><a href="Portfolio2.html">Portfolio2</a></li>
+							<li><a href="Portfolio3.html">Portfolio3</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Australian Property Data Collection and Consolidation&nbsp; &nbsp;&nbsp;</h1>
+							<span class="image main"><img src="images/PowerBIDash.jpg" alt="" /></span>
+                          <p class="project-overview"><em>“This project combines key Australian datasets—including housing prices, rental values, school information, transport accessibility, and crime statistics—to generate actionable insights into the livability of different areas.”</em></p>
+                          <h6>&nbsp;</h6>
+                          
+                          <h6>To start with, we see the data are spread to multiple excel files from different source file for each state, it requires data to be cleansed and unified.</h6>
+<p></p>
+<p></p>
+							
+						<img src="images/story1.png" width="800" alt=""/>
+							
+						  <p></p>
+							
+						  <img src="images/story2.png" width="800" alt=""/>
+							
+							<p></p>
+							
+							
+					      <h6>I design a one level data modelling approach (Star Schema), provides a streamlined structure, allowing for more efficient mapping of foreign keys and business keys across dimension (dim) and fact tables.</h6>
+						
+						<p></p>
+											
+						<img src="images/schema.jpg" width="600" height="693" alt=""/>
+							
+						<p></p>
+							
+						<h6>In this project, I built an SSIS package in Visual Studio to extract, transform, and consolidate multiple Excel file tables into categorized SQL database tables before loading them into the data warehouse.</h6>
+						
+						<p></p>
+						
+						<img src="images/SSIS1.png" width="800" height="452" alt=""/>
+							
+						<p></p>
+							
+						<p>During staging, I used the UNION ALL SSIS Task to merge data before finalizing the load into dimension and fact tables</p>
+							
+						<div class="image-row">
+  						<img src="images/SSIS2.png" width="800" height="454" alt="Left Image">
+  						<img src="images/SSIS3.png" width="790" height="452" alt="Right Image">
+						</div>
+						
+							<p></p>
+							
+						<img src="images/SSIS4.png" width="800" height="238" alt="Centered Image" style="display:block; margin:0 auto;"> 
+							
+						<p></p>
+							
+						  <h6>Now it was&nbsp; successfully loaded in our Datawarehouse</h6>
+						
+						<p></p>
+						
+						  <video src="video/deploy1.mp4" controls class="responsive-video"></video>
+
+							<p></p>
+							
+						  <h6>Now we are able to connect our Datawarehouse to Power BI for cleaning and Visualization </h6>
+						
+						<p></p>
+						
+						
+                          <h6>I employ a streamlined visualization approach in Power BI to effectively highlight key insights. A simple yet informative chart presents the most relevant data categories, including Rental, House, School Category, and Crime Category, ensuring a quick and comprehensive overview.</h6>
+							
+						  <p></p>
+							  
+						 <h6>Additionally, an interactive map is utilized for precise location identification, providing geographic context to the analysis. To further enhance clarity, I incorporate Cards to dynamically display selected data, allowing users to focus on specific metrics with ease.</h6>
+<p></p>
+							
+							<div class = "PBI-gallery">
+					        <img src="images/crop navigation page.png" alt="" width="700"/>
+							<img src="images/PBI1.png" alt="" width="700"/>
+							<img src="images/PBI2.png" alt="" width="700"/>
+							<img src="images/PBI3.png" alt="" width="700"/>
+							<img src="images/PBI4.png" alt="" width="700"/>
+							<img src="images/PBI5.png" alt="" width="700"/>
+							<img src="images/PBI6.png" alt="" width="700"/>
+							</div>
+							
+                        </div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Get in touch</h2>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<input type="text" name="name" id="name" placeholder="Name" />
+										</div>
+										<div class="field half">
+											<input type="email" name="email" id="email" placeholder="Email" />
+										</div>
+										<div class="field">
+											<textarea name="message" id="message" placeholder="Message"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send" class="primary" /></li>
+									</ul>
+								</form>
+							</section>
+							<section>
+								<h2>Follow</h2>
+								<ul class="icons">
+								<li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
